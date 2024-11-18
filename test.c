@@ -1,10 +1,16 @@
 #include<stdio.h>
 int main(){
-	int x=4,y=7,z;
-	z=x;
-	x=y;
-	y=z;
-	printf(" the new value of x and y respectively is %d,%d",x,y);
+	int x,i ;
+	printf("enter the value of x \n");
+	scanf("%d",&x);
+	for(i=2;i<x;i++)
+		if(x%i==0){
+			printf("x is not a prime number\n");
+			break;
+	       	}
+		else{
+			printf("x is a prime number\n");
+		}
 
 return 0;
 }
