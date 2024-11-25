@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main(){
-	int x,temp,k,sum,n;
+	int x,temp,k,sum=0;
 	printf("enter the value of x \n");
 	scanf("%d",&x);
 	if(x>0){
@@ -14,11 +14,9 @@ int main(){
 		temp=x%10;
 	        k=x/10;
 		x=k;
-		sum=temp;
-		n=sum+temp;
-		printf("the number is %d\n",n);
-		
-
+		sum=sum+temp;
 	}
+	printf("the sum is %d\n",sum);
+
 return 0;
 }
