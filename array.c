@@ -1,26 +1,20 @@
 #include<stdio.h>
 int main(){
-	int i,x[5]={37,32,9,51,7},temp;
-	for(i=0;i<5;i++){
-		if(x[0]>x[i+1]){
-			temp=x[0];
-                       	x[0]=x[i+1];
-                        x[i+1]=temp;
+	int i,x[5]={37,32,9,51,7},temp,j;
+	for(j=0;j<4;j++){
+
+	for(i=j;i<5;i++){
+		if(x[j]>x[i]){
+			temp=x[j];
+                       	x[j]=x[i];
+                        x[i]=temp;
 		}
 	}
-	for(i=0;i<4;i++)
-	{
-		if(x[0]>x[i+1]){
-                        temp=x[0];
-                        x[0]=x[i+1];
-                        x[i+1]=temp;
-	
 	}
+	for(i=0;i<5;i++){
+	printf("%d\t",x[i]);
 	}
-	for(i=0;i<5;i++)
-	{
-		printf("%d\t",x[i]);
-	}
+
 	
                         
 
